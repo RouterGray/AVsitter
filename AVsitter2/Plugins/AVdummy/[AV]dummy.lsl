@@ -17,9 +17,9 @@
 integer SITTERS_MAY_CONTROL = TRUE;
 integer GENDER = 0;
 
-// offset that's needed to make the dummy face forward, might be different for different models?
-vector FWD = <0, 1, 0>;
-vector LEFT = <-1, 0, 0>;
+// offset that's needed to make the dummy stand upright facing forward, might be different for different models?
+vector FWD = <1, 0, 0>;
+vector LEFT = <0, 1, 0>;
 vector UP = <0, 0, 1>;
 rotation NEUTRAL_ROT;
 
