@@ -67,7 +67,7 @@ disconnectDummy(key id) {
 pruneDeadDummies() {
     integer i;
     integer len = llGetListLength(gSittingDummies);
-    for(i=len-1; i>0; --i) {
+    for(i=len-1; i>=0; --i) {
         key id = llList2Key(gSittingDummies, i);
         if (llGetBoundingBox(id) == []) {
             disconnectDummy(id);
@@ -187,7 +187,7 @@ default {
 
         integer i;
         integer len = llGetListLength(gPendingDummies);
-        for(i=len-1; i>0; --i) {
+        for(i=len-1; i>=0; --i) {
             // Timed out, no sitA scripts were willing to take 'em
             if(llList2Integer(gPendingDummiesTimes, i) + PENDING_TTL < llGetUnixTime()) {
                 key id = llList2Key(gPendingDummies, i);
