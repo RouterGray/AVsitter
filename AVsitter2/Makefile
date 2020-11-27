@@ -2,10 +2,10 @@
 
 # Full path to Python. For Windows this is typically
 # C:\Python27\python.exe; if it is in your path you don't need to change it.
-PYTHON=python
+PYTHON=python2
 
 # Full path to main.py in the optimizer. Depends on where it was unpacked.
-OPTIMIZER=/l/pyoptimizer/main.py
+OPTIMIZER=/home/Share/Applications/bin/lsl-pyoptimizer/main.py
 
 # Which preprocessor to use. Use 'gcpp' for GNU cpp (typical on Linux);
 # use 'mcpp' for mcpp.
@@ -46,6 +46,7 @@ OPTIMIZED=[AV]sitA.lslo\
  Plugins/AVcontrol/[AV]root-RLV-extra.lslo\
  Plugins/AVcontrol/[AV]root-RLV.lslo\
  Plugins/AVcontrol/[AV]root-control.lslo\
+ Plugins/AVdummy/[AV]root-dummy.lslo\
  Plugins/AVfaces/[AV]faces.lslo\
  Plugins/AVprop/[AV]menu.lslo\
  Plugins/AVprop/[AV]prop.lslo\
@@ -58,6 +59,8 @@ OPTIMIZED=[AV]sitA.lslo\
 
 UNOPTIMIZED=Plugins/AVcontrol/LockGuard/[AV]LockGuard.lsl\
  Plugins/AVcontrol/LockGuard/[AV]LockGuard-object.lsl\
+ Plugins/AVcontrol/LockMeister/[AV]LockMeister.lsl\
+ Plugins/AVdummy/[AV]dummy.lsl\
  Utilities/AVpos-shifter.lsl\
  Utilities/Noob-detector.lsl
 
