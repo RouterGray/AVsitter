@@ -744,7 +744,7 @@ state running
             activePrim = (integer)msg;
             if (!llGetListLength(SITTING_AVATARS))
             {
-                if (controllerHasKeys && id != CONTROLLER)
+                if (controllerHasKeys && (id != CONTROLLER) && (id != llGetOwner()))
                 {
                     reset();
                 }
@@ -801,7 +801,7 @@ state running
                         }
                     }
                 }
-                if (controllerHasKeys && id != CONTROLLER)
+                if (controllerHasKeys && (id != CONTROLLER) && (id != llGetOwner()))
                 {
                     if (isSittingIndex != -1)
                     {
@@ -830,7 +830,7 @@ state running
             {
                 if (isSub(id))
                     return;
-                if (controllerHasKeys && id != CONTROLLER)
+                if (controllerHasKeys && (id != CONTROLLER) && (id != llGetOwner()))
                 {
                     info_dialog(id, "this item is locked by " + controllerName);
                     return;
